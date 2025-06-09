@@ -3,7 +3,7 @@
 
 ## מה זה SLURM?
 
-**SLURM** (Simple Linux Utility for Resource Management) היא מערכת ניהול תורים להרצת עבודות חישוב על קלאסטר.  
+מערכת ה**SLURM** (Simple Linux Utility for Resource Management) היא מערכת ניהול תורים להרצת עבודות חישוב על קלאסטר.  
 היא מקצה משאבים (CPU, RAM, זמן) ומאפשרת לך להריץ קוד בצורה מסודרת, גם כשעובדים הרבה משתמשים על אותו השרת.
 
 ---
@@ -12,16 +12,16 @@
 
 ### 1. עבודה אינטראקטיבית (Interactive Job)
 
-משמשת לבדיקה ידנית:
+משמשת לבדיקה ידנית/פתיחה של מחברות JUPYTER וכו':
 
 ```bash
-srun --pty -p short -c 4 -t 2:00:00 bash
+srun -p adistzachi --pty --ntasks=1 --cpus-per-task=1 --mem=30GB --time=06-00:00:00 /bin/bash
 ```
 
 - `--pty`: מצב אינטראקטיבי
-- `-p short`: תור (partition)
-- `-c 4`: מספר ליבות
-- `-t`: זמן הרצה (שעות:דקות:שניות)
+- `-p adistzachi`: תור (partition)
+- `--mem`: כמות הזכרות
+- `--time`: זמן הרצה (ימים-שעות:דקות:שניות)
 
 ---
 
@@ -40,6 +40,7 @@ srun --pty -p short -c 4 -t 2:00:00 bash
 #SBATCH --time=04:00:00
 #SBATCH --partition=short
 
+commands: i.e:
 module load python/3.10
 python my_script.py
 ```
