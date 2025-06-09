@@ -74,9 +74,10 @@ hostname -i
 ### ✅ 4. הרצת Jupyter Lab על פורט שתבחר
 
 ```bash
+conda activate relevant_env
 jupyter lab --no-browser --port=5566 
 ```
-
+- relevant_env = סביבת העבודה של פייתון המכילה את החבילות הרלוונטיות
 בסיום הפקודה תראה לינק עם token, לדוגמה:
 ```
 http://10.45.32.127:5566/lab?token=abc123...
