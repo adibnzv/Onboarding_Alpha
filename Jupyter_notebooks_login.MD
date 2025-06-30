@@ -46,13 +46,13 @@ Ctrl + B ואז D
 ### ✅ 2. הרצת עבודה אינטראקטיבית עם SLURM
 
 ```bash
-srun --pty -p adistzachi --cpus-per-task=1 --mem=30GB --time=06:00:00 /bin/bash
+srun --pty -p adistzachi --cpus-per-task=1 --mem=30GB --time=06-00:00:00 /bin/bash
 ```
 
 📌 אתה מבקש:
 - ליבה אחת (`--cpus-per-task=1`)
 - 30GB זיכרון (`--mem=30GB`)
-- 6 שעות (`--time=06:00:00`)
+- 6 ימים (`-time=06-00:00:00`)
 
 ---
 
