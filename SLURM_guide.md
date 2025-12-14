@@ -15,11 +15,10 @@
 משמשת לבדיקה ידנית/פתיחה של מחברות JUPYTER וכו':
 
 ```bash
-srun -p adistzachi --pty --ntasks=1 --cpus-per-task=1 --mem=30GB --time=06-00:00:00 /bin/bash
+srun -A sternadi-users_v2 -p adistzachi-pool --qos=owner --pty --ntasks=1 --cpus-per-task=1 --mem=30GB --time=06-00:00:00 /bin/bash
 ```
 
 - `--pty`: מצב אינטראקטיבי
-- `-p adistzachi`: תור (partition)
 - `--mem`: כמות הזכרות
 - `--time`: זמן הרצה (ימים-שעות:דקות:שניות)
 
