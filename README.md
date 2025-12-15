@@ -1,6 +1,3 @@
-# Welcome Alphas!
-# ברוכים הבאים אלפות!
-
-המטרה של הREPO הזו היא לנסות ולכתוב מדריך מסודר שיהיה לכם לשעת צרה :)
-
-### שיהיה לנו בהצלחה!
+# Welcome All!!
+This is the guide for very basic necessities in our lab :)
+### GOOD LUCK!
