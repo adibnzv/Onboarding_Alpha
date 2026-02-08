@@ -46,7 +46,7 @@ Ctrl + B ואז D
 ### ✅ 2. הרצת עבודה אינטראקטיבית עם SLURM
 
 ```bash
-srun -A sternadi-users_v2 -p adistzachi-pool --qos=owner --pty --ntasks=1 --cpus-per-task=1 --mem=30GB --time=06-00:00:00 /bin/bash
+srun -A sternadi-users_v2 -p sternadi-pool --qos=owner --pty --ntasks=1 --cpus-per-task=1 --mem=30GB --time=06-00:00:00 /bin/bash
 ```
 
 📌 אתה מבקש:
